@@ -1,43 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active fist-slide ">
-      <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item second-slide  ">
-      <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item third-slide ">
-      <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-    </div>
-    <div class=" carousel-item fourth-slide ">
-        <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-      </div>
-      <div class=" carousel-item fifth-slide">
-        <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="d-block w-100" alt="...">
-      </div>
-  </div>
-  <button class="carousel-control-prev glyphicon-chevron-left" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden ">Previous</span>
-  </button>
-  <button class="carousel-control-next glyphicon-chevron-right" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+<!--     <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> -->
 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active first-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFY_TB1m63khMhyGWSwN9_qYSKYOteI4i57-Pw_cI1-cwYjCccOf5z1hWUM7OD4oKao&usqp=CAU" alt="Los Angeles" style="width:100%;">
       </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+      <div class="item seconde-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFY_TB1m63khMhyGWSwN9_qYSKYOteI4i57-Pw_cI1-cwYjCccOf5z1hWUM7OD4oKao&usqp=CAU" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item third-slide active">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFY_TB1m63khMhyGWSwN9_qYSKYOteI4i57-Pw_cI1-cwYjCccOf5z1hWUM7OD4oKao&usqp=CAU" alt="New york" style="width:100%;">
+      </div>
+		  <div class="item fourth-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFY_TB1m63khMhyGWSwN9_qYSKYOteI4i57-Pw_cI1-cwYjCccOf5z1hWUM7OD4oKao&usqp=CAU" alt="New york" style="width:100%;">
+      </div>
+		  <div class="item fifth-slide">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnSFY_TB1m63khMhyGWSwN9_qYSKYOteI4i57-Pw_cI1-cwYjCccOf5z1hWUM7OD4oKao&usqp=CAU" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+       <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+	
+<!--   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ -->
 </body>
+ 
 </html>
